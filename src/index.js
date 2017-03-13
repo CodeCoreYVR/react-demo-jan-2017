@@ -6,12 +6,15 @@ import HelloWorld from './HelloWorld';
 // value imported from the file or packages that comes after `from`
 import Square from './Square';
 import Rectangle from './Rectangle';
+import Shape from './Shape';
+import Greetings from './Greetings';
 
 const App = props => {
   const styles = {
     display: 'flex',
     flexFlow: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: '100vh'
   };
   return <div style={styles}>
     <HelloWorld name="Mitch" />
@@ -21,6 +24,9 @@ const App = props => {
     <Square />
     <Square bgColor='HotPink'/>
     <Rectangle />
+    <Shape type="circle" color="Salmon" />
+    <Shape type="square" color="Yellow" />
+    <Greetings names={['Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve']} />
   </div>
 }
 
