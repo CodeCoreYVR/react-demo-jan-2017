@@ -4,7 +4,8 @@ import React from 'react';
 import HelloWorld from './HelloWorld';
 // The name that comes after import will the variable name of the
 // value imported from the file or packages that comes after `from`
-import Square from './Square'
+import Square from './Square';
+import Rectangle from './Rectangle';
 
 const App = props => {
   const styles = {
@@ -19,6 +20,7 @@ const App = props => {
     <HelloWorld name="Aldo" />
     <Square />
     <Square bgColor='HotPink'/>
+    <Rectangle />
   </div>
 }
 
