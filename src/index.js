@@ -8,7 +8,7 @@ import HelloWorld from './HelloWorld';
 const App = props => {
   return <div>
     <HelloWorld name="Mitch" />
-    <HelloWorld name="Steve" />
+    <HelloWorld name="Steve" bgColor="Violet" />
     <HelloWorld name="Basia" />
     <HelloWorld name="Aldo" />
   </div>
