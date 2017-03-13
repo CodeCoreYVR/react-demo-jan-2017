@@ -7,7 +7,12 @@ import HelloWorld from './HelloWorld';
 import Square from './Square'
 
 const App = props => {
-  return <div>
+  const styles = {
+    display: 'flex',
+    flexFlow: 'column',
+    alignItems: 'center'
+  };
+  return <div style={styles}>
     <HelloWorld name="Mitch" />
     <HelloWorld name="Steve" bgColor="Violet" />
     <HelloWorld name="Basia" />
