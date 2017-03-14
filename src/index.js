@@ -10,6 +10,7 @@ import Shape from './Shape';
 import Greetings from './Greetings';
 import Timer from './Timer';
 import StopWatch from './StopWatch';
+import Search from './Search';
 
 const App = props => {
   const styles = {
@@ -18,6 +19,12 @@ const App = props => {
     alignItems: 'center',
     marginBottom: '100vh'
   };
+
+   const names = [
+     'Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve',
+     'Mike', 'Mitch', 'Andrew', 'John', 'Max', 'Nichole'
+   ]
+
   return <div style={styles}>
     <HelloWorld name="Mitch" />
     <HelloWorld name="Steve" bgColor="Violet" />
@@ -31,6 +38,7 @@ const App = props => {
     <Greetings names={['Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve']} />
     <Timer />
     <StopWatch />
+    <Search names={names} />
   </div>
 }
 

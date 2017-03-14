@@ -47,9 +47,18 @@ export default class StopWatch extends Component {
 
   render () {
     return (
-      <div className="StopWatch">
+      <div className="StopWatch" ref={node => console.log(node)}>
+        {/* the ref prop can also take a callback that will receive
+          the DOM node when it is mounted in the browser */}
         <strong>Count: </strong> {this.state.count} <br />
-        <button onClick={this.start}>Start</button>
+        {/* ref is a special prop availabe on any node
+            it can take a string. when used in this way, the DOM node
+            will become available as a property of this.refs
+            (e.g. the node of the Start button is available on this.refs.startButton)
+           */}
+        <button
+          ref="startButton"
+          onClick={this.start}>Start</button>
         <button onClick={this.stop}>Stop</button>
         <button onClick={this.reset}>Reset</button>
       </div>
