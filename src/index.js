@@ -9,6 +9,7 @@ import Rectangle from './Rectangle';
 import Shape from './Shape';
 import Greetings from './Greetings';
 import Timer from './Timer';
+import StopWatch from './StopWatch';
 
 const App = props => {
   const styles = {
@@ -29,6 +30,7 @@ const App = props => {
     <Shape type="square" colors={["Yellow", "Pink", "Aquamarine", "Violet"]} />
     <Greetings names={['Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve']} />
     <Timer />
+    <StopWatch />
   </div>
 }
 
