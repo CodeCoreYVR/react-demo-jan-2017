@@ -25,7 +25,7 @@ const App = props => {
     <Square bgColor='HotPink'/>
     <Rectangle />
     <Shape type="circle" color="Salmon" />
-    <Shape type="square" color="Yellow" />
+    <Shape type="square" colors={["Yellow", "Pink", "Aquamarine", "Violet"]} />
     <Greetings names={['Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve']} />
   </div>
 }
