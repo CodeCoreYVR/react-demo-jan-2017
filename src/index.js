@@ -12,6 +12,7 @@ import Timer from './Timer';
 import StopWatch from './StopWatch';
 import Search from './Search';
 import ShapeMover from './ShapeMover';
+import ShapeMaker from './ShapeMaker';
 
 const App = props => {
   const styles = {
@@ -41,6 +42,7 @@ const App = props => {
     <StopWatch />
     <Search names={names} />
     <ShapeMover />
+    <ShapeMaker />
   </div>
 }
 
