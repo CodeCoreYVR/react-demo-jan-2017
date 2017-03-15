@@ -11,6 +11,7 @@ import Greetings from './Greetings';
 import Timer from './Timer';
 import StopWatch from './StopWatch';
 import Search from './Search';
+import ShapeMover from './ShapeMover';
 
 const App = props => {
   const styles = {
@@ -39,6 +40,7 @@ const App = props => {
     <Timer />
     <StopWatch />
     <Search names={names} />
+    <ShapeMover />
   </div>
 }
 
