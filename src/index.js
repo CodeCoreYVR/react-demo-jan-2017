@@ -13,6 +13,7 @@ import StopWatch from './StopWatch';
 import Search from './Search';
 import ShapeMover from './ShapeMover';
 import ShapeMaker from './ShapeMaker';
+import POS from './POS';
 
 const App = props => {
   const styles = {
@@ -22,10 +23,20 @@ const App = props => {
     marginBottom: '100vh'
   };
 
-   const names = [
+  const names = [
      'Artem', 'Basia', 'Fernando', 'Bernardo', 'Steve',
      'Mike', 'Mitch', 'Andrew', 'John', 'Max', 'Nichole'
    ]
+
+  const products = [
+    { id: 0, name: 'Funky Blaster', price: 20 },
+    { id: 1, name: 'Bull Rocker', price: 11 },
+    { id: 2, name: 'Emergency Vehicle', price: 4 },
+    { id: 3, name: 'Star Wheel', price: 1 },
+    { id: 4, name: 'Slow Walker', price: 56 },
+    { id: 5, name: 'Rocking Chair', price: 667 },
+    { id: 6, name: 'Auto-Computer 5000', price: 9918 }
+  ]
 
   return <div style={styles}>
     <HelloWorld name="Mitch" />
@@ -43,6 +54,7 @@ const App = props => {
     <Search names={names} />
     <ShapeMover />
     <ShapeMaker />
+    <POS products={products} />
   </div>
 }
 
